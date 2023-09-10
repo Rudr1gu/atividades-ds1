@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOTIRIMOS UTILIZANDO IF E ELSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>3 - Escreva um algoritmo que lê dois valores booleanos (lógicos) e então determina se ambos são VERDADEIROS ou FALSOS.</h1>
+
+        <form method="get"> Digite um Valor menor que 10 e maior que 0 <input type="text" size="10" id="num" placeholder="Digite um numero"> <input type="submit" id="send" value="Enviar"></form>
+        <p>Resultado: </p>
+        <p id="res"></p>
+        <script>
+
+        var btn = document.querySelector("#send")
+        
+        btn.addEventListener("click", function(e){
+        e.preventDefault();
+
+        var num = document.querySelector("#num");
+
+        var value = num.value;
+
+            if (value > 0 && value < 10) {document.getElementById("res").innerHTML = ("verdadeiro")}
+        
+            else {document.getElementById("res").innerHTML = ("Falso")}
+        })
+        </script>
+    </div>
+    <footer>
+        <a href="ex02.html">Anterior</a>
+        <a href="ex04.html">Próxima</a>
+    </footer>
+</body>
+</html>

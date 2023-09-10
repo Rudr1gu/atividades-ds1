@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOTIRIMOS UTILIZANDO IF E ELSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <h1>1 - Determinar se um número é positivo, negativo ou zero e exibir mensagem</h1>
+
+        <form method="get">Digite um numero para saber se é Positivo ou Negativo: <input type="text" size="10" name="numero" placeholder="Digite um Numero" id="numero">
+                <input type="submit" id="send" value="Enviar">
+        </form>
+
+        <p>Resultado:</p>
+
+        <p id="resultado"></p>
+
+        <script>
+
+        var btn = document.querySelector("#send")
+        
+        btn.addEventListener("click", function(e){
+            e.preventDefault();
+
+            var numero = document.querySelector("#numero");
+
+            var value = numero.value;
+            
+
+            if (value > 0){
+                document.getElementById("resultado").innerHTML = ("Este numero é Positivo")
+            }
+            
+            else if (value == 0) {document.getElementById("resultado").innerHTML = ("Numero é zero")}
+            
+            else  if (value < 0){document.getElementById("resultado").innerHTML = ("Este numero é Negativo")}
+
+            else {document.getElementById("resultado").innerHTML = ("digite um numero")}
+            
+        })
+        </script>
+    </div>
+
+    <footer>
+        <a href="ex02.html">Próxima</a>
+    </footer>
+</body>
+</html>
