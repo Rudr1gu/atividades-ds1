@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOTIRIMOS UTILIZANDO IF E ELSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>6 - A atribuição dos conceitos obedece a tabela abaixo. O algoritmo deve escrever o número do aluno, suas notas, a média dos exercícios,
+            a média de aproveitamento, o conceito correspondente e a mensagem 'Aprovado' se o conceito for A, B ou C, e 'Reprovado' se o conceito for D ou E.</h1>
+
+            <form  method="post">
+                <label>Numero:</label> <input type="text" size="3" maxlength="3">
+                <label>Nome:</label> <input type="text" size="20" maxlength="20"> <br> <br>
+                <label>1°Nota:</label> <input type="text" size="6" maxlength="3" placeholder="0 a 100">
+                <label>2°Nota:</label> <input type="text" size="6" maxlength="3" placeholder="0 a 100">
+                <label>3°Nota:</label> <input type="text" size="6" maxlength="3" placeholder="0 a 100">
+                <label>4°Nota:</label> <input type="text" size="6" maxlength="3" placeholder="0 a 100" id="quarta">
+                <input type="submit" id="send" value="Enviar">
+
+
+            </form>
+
+            <p>Resultado: </p>
+            <p id="res"></p>
+            <p id="res1"></p>
+
+
+
+        <script>
+
+            bt = document.querySelector("#send")
+            bt.addEventListener("click", function(e){
+                e.preventDefault();
+                    var num   = document.forms[0].elements[0].value
+                        aluno = document.forms[0].elements[1].value
+                        nota1 = document.forms[0].elements[2].value
+                        nota2 = document.forms[0].elements[3].value
+                        nota3 = document.forms[0].elements[4].value
+                        nota4 = document.getElementById("quarta").value
+                        media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parseFloat (nota4)) / 4  
+
+                        if (media >= 90) {
+                            document.getElementById("res").innerHTML = ("Numero: " + num +", Nome: " + aluno + (", Media de Aproveitamento = A, Aprovado"))}
+
+                        else if (media >= 75 && media < 90) {
+                            document.getElementById("res").innerHTML = ("Numero: " + num +", Nome: " + aluno + (", Media de Aproveitamento = B, Aprovado"))}
+
+                        else if (media >= 60 && media < 75) {
+                            document.getElementById("res").innerHTML = ("Numero: " + num +", Nome: " + aluno + (", Media de Aproveitamento = C, Aprovado"))}
+
+                        else if (media >= 40 && media < 60) {
+                            document.getElementById("res").innerHTML = ("Numero: " + num +", Nome: " + aluno + (", Media de Aproveitamento = D, Reprovado"))}
+
+                        else if (media < 40) {
+                            document.getElementById("res").innerHTML = ("Numero: " + num +", Nome: " + aluno + (", Media de Aproveitamento = E, Reprovado"))}
+
+                        else {("Digite numeros e caracteres validos")}
+
+                        document.getElementById("res1").innerHTML = ("Sua média foi = " + media + " Pontos")
+        })
+                    
+        </script>
+    </div>
+    <footer>
+        <a href="ex05.html">Anterior</a>
+        <a href="ex01.html">Inicio</a>
+    </footer>
+
+</body>
+</html>

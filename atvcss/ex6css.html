@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: gray;
+            margin-left: 20px;
+        }
+
+        h1 {
+            color: blue;
+            text-decoration: underline;
+        }
+        ul {
+            background-color: beige;
+            list-style-image: url('img/peqstar.png');
+            border: 2px solid red;
+            width: 300px;
+            padding: 10px 10px 10px 60px;
+            margin: 10px 10px 10px 5px;
+           
+          
+            
+        }
+
+        .check {
+            list-style-image: url(img/check.png);
+            border: none;
+            width: 200px;
+        }
+
+        div {
+            margin: 20px;
+            text-align: center;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        div>a{
+            color: black;
+            display: inline-block;
+            border: 1px solid black;
+            text-decoration: none;
+            width: 80px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        div>a:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 2px black; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Lista de compras</h1>
+
+    <ul>
+        <li>Café</li>
+            <ul class="check">
+                <li>Em pó</li>
+                <li>Solúvel</li>
+            </ul>
+        <li>Açucar</li>
+        <li>Arroz</li>
+        <li>Leite</li>
+        <li>Massa</li>
+            <ul class="check">
+                <li>Spaguetti</li>
+                <li>Tagliatelle</li>
+                <li>Vermicelli</li>
+                <li>Maccheron</li>
+            </ul>
+    </ul>
+
+    <div> <a href="ex5css.html">Anterior</a><a href="ex7css.html">Próxima</a></div>
+    
+</body>
+</html>

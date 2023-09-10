@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOTIRIMOS UTILIZANDO IF E ELSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <h1>2 - Determinar o dia da semana com base no número do dia da semana (onde 1 é domingo e 7 é sábado):</h1>
+
+        <form method="get"> Digite um numero de 1 a 7 <input type="text" size="10" id="num" placeholder="Digite um numero"> <input type="submit" id="send" value="Enviar"></form>
+        <p>Resultado: </p>
+        <p id="res"></p>
+        <script>
+
+            var btn = document.querySelector("#send")
+        
+                btn.addEventListener("click", function(e){
+                e.preventDefault();
+
+                var num = document.querySelector("#num");
+
+                var value = num.value;
+
+                if (value == 1 ) {document.getElementById("res").innerHTML = ("Domingo")}
+                else if (value == 2) {document.getElementById("res").innerHTML = ("Segunda-Feira")}
+                else if (value == 3) {document.getElementById("res").innerHTML = ("Terça-Feira")}
+                else if  (value == 4) {document.getElementById("res").innerHTML = ("Quarta-Feira")}
+                else if (value == 5) {document.getElementById("res").innerHTML = ("Quinta-Feira")}
+                else if (value == 6) {document.getElementById("res").innerHTML = ("Sexta-Feira")}
+                else if (value == 7) {document.getElementById("res").innerHTML = ("Sabado")}
+                else { document.getElementById("res").innerHTML = ("O numero não corresponde a nenhum dia da semana")}
+                
+            })
+        </script>
+    </div>
+
+    <footer>
+        <a href="ex01.html">Anterior</a>
+        <a href="ex03.html">Próxima</a>
+    </footer>
+    
+</body>
+</html>
