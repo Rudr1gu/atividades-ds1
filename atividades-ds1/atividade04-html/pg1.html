@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML atv 04</title>
+    <link rel="stylesheet" href="paes.css">
+</head>
+<body>
+    <header>
+        <h1>Pães Doces e Bolos</h1>
+    </header>
+    <nav>
+        <ul type="none">
+        <li><a href="index.html">Página principal</a></li><br>
+        <li><a href="pg1.html">Ecomendar bolos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Encomendar Bolo</h2>
+        <form method="get">Nome:<input type="text" name="usuario" size="35" maxlength="35" placeholder="Informe o Nome"> DDD <input type="text" name="usuario" size="2" maxlength="2" placeholder="DDD"> Telefone <input type="text" name="usuario" size="10" maxlength="9" placeholder="Telefone">
+            </form>
+            <br>
+
+        <table>
+             <caption>Bolos</caption>
+            <tr>
+                <td><img src="img/Bolo01.png" alt="bolo de chocolate" width="300" ></td>
+                <td><img src="img/Bolo02.png" alt="bolo de frutas" width="300"></td>
+                <td><img src="img/Bolo03.png" alt="bolo de misto" width="300"></td>
+            </tr>
+            <tr>
+
+                <th>Chocolates</th>
+                <th>Frutas</th>
+                <th>Misto</th>
+            </tr>
+        </table>
+        <br>
+
+        <form method="get" >Sabor <select name="Sabor" aria-placeholder="sabor">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Frutas">Frutas</option>
+            <option value="Misto">Misto</option>
+        </select>
+            
+            
+            Tipo <input type="radio" name="nivel" value="bas">Simples<input type="radio" name="nivel" value="ava">Decorado <br> <br> 
+            Tamanho <select name="tamanho" aria-placeholder="sabor">
+                <option value="Chocolate">1 kg</option>
+                <option value="Frutas">1,5 kg</option>
+                <option value="Misto">2 kg</option>
+            </select> Diet? <input type="radio">
+            <br> Observação <br>
+             <textarea name="obs" id="#" cols="80" rows="3" placeholder="Observação sobre o pedido"></textarea>
+        </form>
+        <br>
+
+        <button>Enviar Pedido</button> <button>Limpar</button>
+
+
+    </main>
+    
+</body>
+</html>
