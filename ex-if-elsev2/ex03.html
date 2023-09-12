@@ -11,24 +11,32 @@
     <div>
         <h1>3 - Escreva um algoritmo que lê dois valores booleanos (lógicos) e então determina se ambos são VERDADEIROS ou FALSOS.</h1>
 
-        <form method="get"> Digite um Valor menor que 10 e maior que 0 <input type="text" size="10" id="num" placeholder="Digite um numero"> <input type="submit" id="send" value="Enviar"></form>
+        <form method="get">
+            <label>Digite um Valor menor que 10 e maior que 0</label>
+            <input type="text" size="10" id="num" placeholder="Digite um numero">
+            <input type="submit" id="send" value="Enviar">
+        </form>
+        
         <p>Resultado: </p>
+        
         <p id="res"></p>
+        
         <script>
 
-        var btn = document.querySelector("#send")
+        const btn = document.querySelector("#send")
         
-        btn.addEventListener("click", function(e){
-        e.preventDefault();
+            btn.addEventListener("click", function(e){
+                e.preventDefault();
 
-        var num = document.querySelector("#num");
+                var num = document.querySelector("#num");
 
-        var value = num.value;
+                var value = num.value;
 
-            if (value > 0 && value < 10) {document.getElementById("res").innerHTML = ("verdadeiro")}
-        
-            else {document.getElementById("res").innerHTML = ("Falso")}
-        })
+                if (value > 0 && value < 10) {document.getElementById("res").innerHTML = ("verdadeiro")}
+            
+                else {document.getElementById("res").innerHTML = ("Falso")}
+            })
+
         </script>
     </div>
     <footer>

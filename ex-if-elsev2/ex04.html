@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>ALGOTIRIMOS UTILIZANDO IF E ELSE</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div>
         <h1>4 - Vamos verificar o nome de usuário, a senha e se o usuário está correto:</h1>
@@ -17,32 +19,30 @@
             <label>Nome:</label>
             <input type="text" name="fnome" id="user" value="rodrigo">
             <label>Senha:</label>
-            <input type="password" name="fsenha" value="123" >
+            <input type="password" name="fsenha" value="123">
             <input type="submit" name="btenviar" id="send">
         </form>
-        
+
         <p id="res"></p>
-        
+
         <script>
-        
-        
-            bt = document.querySelector("#send")
-            bt.addEventListener("click", function(e){
-                e.preventDefault();
-        
-                var user = document.forms[0].elements[0].value
-                var pass = document.forms[0].elements[1].value
-        
-                if (user == ("rodrigo") && pass == 123 ){ 
-                    document.getElementById("res").innerHTML = ("Nome e Senha Correta")
-                }
-        
-                else {
-                    document.getElementById("res").innerHTML = ("Verifique o nome ou a senha")
-                }
-        
-            })
-        
+            
+            const bt = document.querySelector("#send")
+                bt.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    var user = document.forms[0].elements[0].value
+                    var pass = document.forms[0].elements[1].value
+
+                    if (user == ("rodrigo") && pass == 123) {
+                        document.getElementById("res").innerHTML = ("Nome e Senha Correta")
+                    }
+
+                    else {
+                        document.getElementById("res").innerHTML = ("Verifique o nome ou a senha")
+                    }
+                })
+
         </script>
         </script>
     </div>
@@ -50,6 +50,7 @@
         <a href="ex03.html">Anterior</a>
         <a href="ex05.html">Próxima</a>
     </footer>
-    
+
 </body>
+
 </html>

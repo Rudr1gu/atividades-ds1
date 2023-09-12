@@ -12,8 +12,10 @@
     <div>
         <h1>1 - Determinar se um número é positivo, negativo ou zero e exibir mensagem</h1>
 
-        <form method="get">Digite um numero para saber se é Positivo ou Negativo: <input type="text" size="10" name="numero" placeholder="Digite um Numero" id="numero">
-                <input type="submit" id="send" value="Enviar">
+        <form method="get">
+            <label>Digite um numero para saber se é Positivo ou Negativo:</label> 
+            <input type="text" size="10" name="numero" placeholder="Digite um Numero" id="numero">
+            <input type="submit" id="send" value="Enviar">
         </form>
 
         <p>Resultado:</p>
@@ -22,23 +24,18 @@
 
         <script>
 
-        var btn = document.querySelector("#send")
+        const btn = document.querySelector("#send")
         
         btn.addEventListener("click", function(e){
             e.preventDefault();
 
-            var numero = document.querySelector("#numero");
+            var numero = document.querySelector("#numero").value
 
-            var value = numero.value;
+            if (numero > 0){document.getElementById("resultado").innerHTML = ("Este numero é Positivo")}
             
-
-            if (value > 0){
-                document.getElementById("resultado").innerHTML = ("Este numero é Positivo")
-            }
+            else if (numero == 0) {document.getElementById("resultado").innerHTML = ("Numero é zero")}
             
-            else if (value == 0) {document.getElementById("resultado").innerHTML = ("Numero é zero")}
-            
-            else  if (value < 0){document.getElementById("resultado").innerHTML = ("Este numero é Negativo")}
+            else  if (numero < 0){document.getElementById("resultado").innerHTML = ("Este numero é Negativo")}
 
             else {document.getElementById("resultado").innerHTML = ("digite um numero")}
             

@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALGOTIRIMOS UTILIZANDO IF E ELSE</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div>
-        <h1>5 - O IMC – Indice de Massa Corporal é um critério da Organização Mundial de Saúde para dar uma indicação sobre a
+        <h1>5 - O IMC – Indice de Massa Corporal é um critério da Organização Mundial de Saúde para dar uma indicação
+            sobre a
             condição de peso de uma pessoa adulta.</h1>
 
-            <form method="post">Digite seu peso <input type="text" id="kg" size="5" maxlength="5" placeholder="kg">
-                Digite sua Altura <input type="text" id="alt" placeholder="Use ponto" size="8" maxlength="5">
-                <input type="submit" id="send" value="Enviar">
-            </form>
+        <form method="post">
+            <label>Digite seu peso</label> 
+            <input type="text" id="kg" size="5" maxlength="5" placeholder="kg">
+            <label>Digite sua Altura</label> 
+            <input type="text" id="alt" placeholder="Use ponto" size="8" maxlength="5">
+            <input type="submit" id="send" value="Enviar">
+        </form>
 
-            <p>Resultado:</p>
-            <p id="res"></p>
-            <p id="res1"></p>
+        <p>Resultado:</p>
+        <p id="res"></p>
+        <p id="res1"></p>
         <script>
 
+            const bt = document.querySelector("#send")
+                bt.addEventListener("click", function (e) {
+                    e.preventDefault();
 
-        
-        
-        bt = document.querySelector("#send")
-        bt.addEventListener("click", function(e){
-            e.preventDefault();
-    
-            var kg = document.forms[0].elements[0].value
-            var alt = document.forms[0].elements[1].value
-            var imc = parseFloat(kg)/(parseFloat(alt) * parseFloat(alt))
+                    var kg = document.forms[0].elements[0].value
+                    var alt = document.forms[0].elements[1].value
+                    var imc = parseFloat(kg) / (parseFloat(alt) * parseFloat(alt))
 
-            console.log(imc)
-                if (imc < 18.5) {document.getElementById("res").innerHTML = ("Abaixo do peso ideal.")}
-                
-                else if (imc >= 18.5 && imc < 25) {document.getElementById("res").innerHTML = ("Peso ideal!")}
-                
-                else if (imc >= 25 && imc <= 30) {document.getElementById("res").innerHTML = ("Acima do peso ideal")}
-                
-                else if (imc > 30 ) {document.getElementById("res").innerHTML =("Obeso!")}
-                
-                else {document.getElementById("res").innerHTML =("digite um valor valido")}
-                
-                document.getElementById("res1").innerHTML =((" Seu IMC é = ")+ imc.toFixed(2))
-    
-        })
+                    console.log(imc)
+                    if (imc < 18.5) { document.getElementById("res").innerHTML = ("Abaixo do peso ideal.") }
 
+                    else if (imc >= 18.5 && imc < 25) { document.getElementById("res").innerHTML = ("Peso ideal!") }
 
+                    else if (imc >= 25 && imc <= 30) { document.getElementById("res").innerHTML = ("Acima do peso ideal") }
+
+                    else if (imc > 30) { document.getElementById("res").innerHTML = ("Obeso!") }
+
+                    else { document.getElementById("res").innerHTML = ("digite um valor valido") }
+
+                    document.getElementById("res1").innerHTML = ((" Seu IMC é = ") + imc.toFixed(2))
+                })
         </script>
     </div>
     <footer>
         <a href="ex04.html">Anterior</a>
         <a href="ex06.html">Próxima</a>
     </footer>
-    
+
 </body>
+
 </html>
