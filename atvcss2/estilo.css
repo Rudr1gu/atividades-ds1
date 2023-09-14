@@ -1,0 +1,94 @@
+body {
+    background-color: brown;
+    font-family: tahoma;
+    text-align: center;
+}
+
+header {
+    color: whitesmoke;
+    text-align: center;
+    border: 3px dotted mistyrose;
+    width: 69%;
+    font-style: italic;
+    position: absolute;
+    top:10px;
+    right:0px;
+}
+
+header>h1{
+    margin: 0px;
+}
+
+header>h1:hover{
+    background-color: crimson;
+    color: lightpink;
+    border-color: lightpink;
+}
+
+main{
+    text-align: center;
+    width: 70%;
+    position: absolute;
+    top:60px;
+    right:0px;
+
+}
+
+article>h3{
+    color: white;
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+article>h3:hover{
+    color: indianred;
+}
+
+article>img {
+    display: inline-block;
+    width: 15%;
+    border: 3px dotted indianred;
+}
+
+article>img:hover {
+    transform: rotate(-5deg);
+    border: 5px double gold;
+}
+
+aside {
+    width: 30%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    text-align: left;
+    background-image: url(Capas/vinho.jpg);
+
+}
+
+aside>h2{
+    color:maroon;
+    text-align: center;
+    background-image:url(Capas/fundo.jpg);
+}
+
+aside>h3 {
+    color:maroon;
+    text-align: center;
+    background-image:url(Capas/fundo.jpg);
+
+}
+
+ul>li{
+    list-style-image: url(Capas/check.png);
+    color:lightgrey;
+    font-size: 10pt;
+    font-weight: bolder;
+    margin: 35px;
+    text-align: left;
+}
+span {
+    color: gold;
+    text-decoration: underline;
+    font-weight: bolder;
+
+}
