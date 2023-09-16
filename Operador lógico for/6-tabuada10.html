@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Lógico for</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>liste os números da tabuada do 10;</h1>
+
+    <div>
+        <script>
+            for (i=10; i < 110; i+=10){
+                document.write(`${i}<br>`)
+            }
+        </script>
+    </div>
+
+    <footer>
+        <a href="5-tabuada2.html">Anterior</a>
+        <a href="1-atv.html" id="no">Inicio</a>
+    </footer>
+    
+    <script>
+        let button = document.getElementById('no')
+        let height = window.innerHeight - 50
+        let width = window.innerWidth - 50
+
+        button.addEventListener('mouseover', function(){
+            button.style.position = "absolute"
+            button.style.top = Math.random() * height + "px"
+            button.style.left = Math.random() * width + "px"
+        })
+    </script>
+    
+</body>
+</html>
