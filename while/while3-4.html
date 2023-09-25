@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While 3 e 4</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <h1>liste os números pares menores que 100;</h1>
+    <h1>liste os números ímpares menores que 100;</h1>
+
+    <div class="form">
+        <form method="post">
+            Escolha par ou impar <select name="Par ou impar" id="valor">
+                <option value="100">par</option>
+                <option value="99">impar</option>
+            </select>
+            <input type="button" value="enviar" id="send">
+        </form>
+    </div>
+
+    <div class="res">
+        <p id="res"></p>
+    </div>
+
+    <script>
+
+        const send = document.getElementById('send')
+            send.addEventListener('click', function(e){
+                e.preventDefault
+
+                let valor = document.getElementById('valor').value
+                let i = Number()
+
+                if (valor == 100) { i = 100}
+                else { i = 99}
+
+                
+                while(i > 0){
+                    document.getElementById('res').innerHTML += (`${i} <br>`);
+                    i -= 2
+                }
+            })
+
+    
+
+    </script>
+
+<footer><a href="while2.html">Anterior</a><a href="while5-8.html">Próxima</a>
+</footer>
+    
+</body>
+</html>

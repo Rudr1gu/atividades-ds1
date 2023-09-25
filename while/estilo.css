@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(270deg, rgb(122, 245, 122), rgb(23, 163, 128), rgb(28, 146, 155)) ;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px black;
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+    max-width: 900px;
+    min-width: 280px;
+    margin: auto;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.res {
+    background-color: white;
+    padding: 20px;
+    max-width: 900px;
+    min-width: 280px;
+    margin: 10px auto;
+    border-radius: 10px;
+    columns: 4;
+    color: black;
+    font-size: 1.3em;
+}
+
+#send {
+    background: linear-gradient(270deg, rgb(122, 245, 122), rgb(23, 163, 128), rgb(28, 146, 155));
+    font-weight: bolder;
+    margin: 0px 0px 0px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+#send:hover {
+    background: white;
+    color:black;
+    font-style: italic;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    max-width: 900px;
+    min-width: 280px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+footer>a {
+    display: inline-block;
+    background: linear-gradient(270deg, rgb(122, 245, 122), rgb(23, 163, 128), rgb(28, 146, 155));
+    font-weight: bolder;
+    margin: 0px 0px 0px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+footer>a:hover{
+    background: white;
+    color:black;
+    font-style: italic;
+}
+

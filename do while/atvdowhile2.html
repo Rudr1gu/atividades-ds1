@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Lógico Do While</title>
+    <style>
+        body{
+            background: linear-gradient(45deg, #2724ff, #0a4afa, #0b9ff5 );
+            height: 100vh;
+        }
+
+        header {
+            font-size: 0.8em;
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 20px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vh;
+            border-radius: 10px;
+            border: 1px solid black;
+
+        }
+
+        main {
+            font-size: 0.8em;
+            background-color: #ffffff;
+            padding: 10px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vh;
+            columns: 4;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>2º = Criar um algoritmo utilizando o operador DO WHILE onde inicie o salário com R$ 10.000,00 e decrescente em R$ 100,00 até chegar em R$ 100,00. Visualizar linha por linha os decréscimos no browser.</h1>
+    </header>
+    <main>    
+            <p id="res"></p>
+    </main>
+
+    <script>
+
+        let i = 10100
+
+        do {
+            i -= 100; document.getElementById('res').innerHTML += (i.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) + "<br>")
+       }
+
+         while ( i > 100);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While 2</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <h1>liste números  menores que 100 até 2 e escreva seu nome ao lado da variável;</h1>
+
+    <div class="form">
+        <form method="post">
+            <input type="text" id="valor" value="Rodrigo Santos">
+            <input type="button" value="enviar" id="send">
+        </form>
+    </div>
+
+    <div class="res">
+        <p id="res"></p>
+    </div>
+
+    <script>
+
+        const send = document.getElementById('send')
+            send.addEventListener("click", function(e){
+                e.preventDefault()
+
+                var valor = document.getElementById('valor').value
+                var i = 99
+                
+                while(i >= 2){
+                    document.getElementById('res').innerHTML += (`${i} ${valor} <br>`) ;
+                    i--
+                }
+            }) 
+
+    </script>
+
+    <footer><a href="while1.html">Anterior</a><a href="while3-4.html">Próxima</a>
+    </footer>
+    
+</body>
+</html>

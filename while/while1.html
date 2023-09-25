@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while 1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>liste números maiores que 1 e menores que 100 e escreva ETEC ZONA LESTE ao lado da variável;</h1>
+
+    <div class="form">
+        <form method="post">
+            <input type="text" id="valor" value="ETEC ZONA LESTE">
+            <input type="button" value="enviar" id="send">
+        </form>
+    </div>
+
+
+    <div class="res">
+        <p id="res"></p>
+    </div>
+
+    <script>
+
+        const send = document.getElementById('send')
+            send.addEventListener("click", function(e){
+                e.preventDefault()
+
+                var valor = document.getElementById('valor').value
+                var i = 1
+                
+                while(i < 100){
+                    document.getElementById('res').innerHTML += (`${i} - ${valor} <br>`) ;
+                    i++
+                }
+            }) 
+
+    </script>
+
+    <footer>
+        <a href="while2.html">Próxima</a>
+    </footer>
+    
+</body>
+</html>
